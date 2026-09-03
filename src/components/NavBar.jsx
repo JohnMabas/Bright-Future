@@ -24,8 +24,12 @@ export default function NavBar() {
           <Link to="/about">
             <li>About</li>
           </Link>
-        <Link to="/academic"><li>Admissions</li></Link>  
-          <li>News & Events</li>
+          <Link to="/academic">
+            <li>Admissions</li>
+          </Link>
+          <Link to="/newEvents">
+            <li>News & Events</li>
+          </Link>
           <li>Contact</li>
         </ul>
 
@@ -55,7 +59,10 @@ export default function NavBar() {
           <Link to="/academic" onClick={() => setIsOpen(false)}>
             <li>Admissions</li>
           </Link>
-          <li>News & Events</li>
+          <Link to="/newEvents" onClick={() => setIsOpen(false)}>
+            <li>News & Events</li>
+          </Link>
+
           <li>Contact</li>
           <div className="flex items-center gap-4">
             <FaSearch className="text-[#0F3158]" />

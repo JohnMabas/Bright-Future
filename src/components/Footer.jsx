@@ -1,3 +1,5 @@
+import Logo from "/public/image/Bright-log0.png";
+
 export default function Footer() {
   return (
     <div>
@@ -6,18 +8,10 @@ export default function Footer() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shrink-0">
-                  <svg
-                    viewBox="0 0 24 24"
-                    className="w-7 h-7 text-[#0b1f3a]"
-                    fill="currentColor"
-                  >
-                    <path d="M12 2 2 7l10 5 8-4.1V17h2V7L12 2Z" />
-                    <path
-                      d="M6 10.5V16c0 2 3 4 6 4s6-2 6-4v-5.5l-6 3-6-3Z"
-                      opacity="0.6"
-                    />
-                  </svg>
+                <div className="">
+                 
+                  <img src={Logo} alt="" className="w-20 h-10"/>
+
                 </div>
                 <div>
                   <p className="text-white font-semibold leading-tight">
@@ -29,9 +23,7 @@ export default function Footer() {
                   </p>
                 </div>
               </div>
-              <p className="mt-4 text-sm text-slate-400 max-w-xs">
-                Quick links, contact information and social media.
-              </p>
+            
             </div>
 
             <div>

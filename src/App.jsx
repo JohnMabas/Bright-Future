@@ -12,6 +12,7 @@ import NavBar from './components/NavBar'
 import Stats from './components/Stats'
 import WhyChoose from './components/WhyChoose'
 import Academic from "./components/Academic";
+import NewEvents from "./components/NewEvents";
 
 
 function Home(){
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
   {
     path: "/academic",
     element:<Academic/>
+  },
+
+  {
+    path: "/newEvents",
+    element:<NewEvents/>
   },
 ]);
 
