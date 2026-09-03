@@ -14,6 +14,7 @@ import WhyChoose from './components/WhyChoose'
 import Academic from "./components/Academic";
 import NewEvents from "./components/NewEvents";
 import CTA from "./components/CTA";
+import ContactUs from "./components/ContactUs";
 
 
 function Home(){
@@ -52,6 +53,11 @@ const router = createBrowserRouter([
   {
     path: "/newEvents",
     element:<NewEvents/>
+  },
+
+  {
+    path: "/ContactUs",
+    element:<ContactUs/>
   },
 ]);
 

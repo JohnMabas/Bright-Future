@@ -30,7 +30,7 @@ export default function NavBar() {
           <Link to="/newEvents" className="hover:underline">
             <li>News & Events</li>
           </Link>
-          <li>Contact</li>
+         <Link to="/ContactUs"><li>Contact</li></Link> 
         </ul>
 
         <div className="hidden md:flex items-center gap-4">
@@ -60,7 +60,7 @@ export default function NavBar() {
             <li>Admissions</li>
           </Link>
           <Link to="/newEvents" className="hover:underline" onClick={() => setIsOpen(false)}>
-            <li>News & Events</li>
+          <Link to="/ContactUs" className="hover:underline" onClick={() => setIsOpen(false)}><li>News & Events</li></Link>  
           </Link>
 
           <li>Contact</li>
