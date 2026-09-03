@@ -9,7 +9,7 @@ export default function AboutHero() {
           <div>
             <img
               src={SchoolImage}
-              alt="Brightview Secondary School building"
+              alt=" School building"
               className="w-full h-auto rounded-2xl object-cover"
             />
           </div>

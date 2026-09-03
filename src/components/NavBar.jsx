@@ -48,7 +48,7 @@ export default function NavBar() {
           <li>Contact</li>
           <div className="flex items-center gap-4">
             <FaSearch className="text-[#0F3158]" />
-            <button className="rounded-full bg-[#1769E8] text-white w-28 p-2">
+            <button className="rounded-full bg-[#1769E8] text-white w-28 p-2  hover:bg-[#1257c2] transition-colors">
               Apply Now
             </button>
           </div>
