@@ -11,6 +11,7 @@ import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import Stats from './components/Stats'
 import WhyChoose from './components/WhyChoose'
+import Academic from "./components/Academic";
 
 
 function Home(){
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
    {
     path: "/about",
     element:<About/>
+  },
+
+  {
+    path: "/academic",
+    element:<Academic/>
   },
 ]);
 

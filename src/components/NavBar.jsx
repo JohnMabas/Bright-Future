@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { FaSearch, FaBars, FaTimes } from "react-icons/fa"
-import Logo from "/public/image/Bright-log0.png"
+import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
+import Logo from "/public/image/Bright-log0.png";
 import { Link } from "react-router";
 
 export default function NavBar() {
@@ -18,10 +18,13 @@ export default function NavBar() {
         </div>
 
         <ul className="hidden md:flex justify-center items-center gap-10 text-[#0F3158]">
-          <Link to="/"><li>Home</li></Link>
-          <Link to="/about"><li>About</li></Link>
-          <li>Admissions</li>
-          <li>School Life</li>
+          <Link to="/">
+            <li>Home</li>
+          </Link>
+          <Link to="/about">
+            <li>About</li>
+          </Link>
+        <Link to="/academic"><li>Admissions</li></Link>  
           <li>News & Events</li>
           <li>Contact</li>
         </ul>
@@ -33,27 +36,35 @@ export default function NavBar() {
           </button>
         </div>
 
-        <button className="md:hidden text-2xl text-[#0F3158]" onClick={() => setIsOpen(!isOpen)}>
+        <button
+          className="md:hidden text-2xl text-[#0F3158]"
+          onClick={() => setIsOpen(!isOpen)}
+        >
           {isOpen ? <FaTimes /> : <FaBars />}
         </button>
       </nav>
 
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-6 text-[#0F3158] py-6">
-          <Link to="/" onClick={() => setIsOpen(false)}><li>Home</li></Link>
-          <Link to="/about" onClick={() => setIsOpen(false)}><li>About</li></Link>
-          <li>Admissions</li>
-          <li>School Life</li>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            <li>Home</li>
+          </Link>
+          <Link to="/about" onClick={() => setIsOpen(false)}>
+            <li>About</li>
+          </Link>
+          <Link to="/academic" onClick={() => setIsOpen(false)}>
+            <li>Admissions</li>
+          </Link>
           <li>News & Events</li>
           <li>Contact</li>
           <div className="flex items-center gap-4">
             <FaSearch className="text-[#0F3158]" />
-            <button className="rounded-full bg-[#1769E8] text-white w-28 p-2  hover:bg-[#1257c2] transition-colors">
+            <button className="rounded-full bg-[#0F3158] text-white w-28 p-2  hover:bg-[#362a10] transition-colors">
               Apply Now
             </button>
           </div>
         </ul>
       )}
     </div>
-  )
+  );
 }

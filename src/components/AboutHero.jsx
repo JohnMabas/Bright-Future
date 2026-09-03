@@ -53,7 +53,7 @@ export default function AboutHero() {
               </div>
             </div>
 
-            <button className="mt-8 px-6 py-3 rounded-full bg-[#1769E8] text-white text-sm font-medium flex items-center gap-2 hover:bg-[#1257c2] transition-colors">
+            <button className="mt-8 px-6 py-3 rounded-full bg-[#0F3158] text-white text-sm font-medium flex items-center gap-2 hover:bg-[#38290a] transition-colors">
               Learn More
               <span>
                 <svg
