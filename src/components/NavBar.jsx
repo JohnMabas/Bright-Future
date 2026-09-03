@@ -30,7 +30,9 @@ export default function NavBar() {
           <Link to="/newEvents" className="hover:underline">
             <li>News & Events</li>
           </Link>
-         <Link to="/ContactUs"><li>Contact</li></Link> 
+          <Link to="/ContactUs">
+            <li>Contact</li>
+          </Link>
         </ul>
 
         <div className="hidden md:flex items-center gap-4">
@@ -50,20 +52,42 @@ export default function NavBar() {
 
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-6 text-[#0F3158] py-6">
-          <Link to="/" className="hover:underline" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/"
+            className="hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
             <li>Home</li>
           </Link>
-          <Link to="/about" className="hover:underline" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/about"
+            className="hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
             <li>About</li>
           </Link>
-          <Link to="/academic" className="hover:underline" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/academic"
+            className="hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
             <li>Admissions</li>
           </Link>
-          <Link to="/newEvents" className="hover:underline" onClick={() => setIsOpen(false)}>
-          <Link to="/ContactUs" className="hover:underline" onClick={() => setIsOpen(false)}><li>News & Events</li></Link>  
+          <Link
+            to="/newEvents"
+            className="hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
+            <li>News & Events</li>
           </Link>
 
-          <li>Contact</li>
+          <Link
+            to="/ContactUs"
+            className="hover:underline"
+            onClick={() => setIsOpen(false)}
+          >
+            <li>Contact</li>
+          </Link>
           <div className="flex items-center gap-4">
             <FaSearch className="text-[#0F3158]" />
             <button className="rounded-full bg-[#0F3158] text-white w-28 p-2  hover:bg-[#362a10] transition-colors">

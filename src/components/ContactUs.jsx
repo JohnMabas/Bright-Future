@@ -186,14 +186,13 @@ export default function ContactUs() {
                 </div>
               </div>
 
-              <div className="min-h-75 overflow-hidden rounded-2xl border border-[#dce8f3] bg-white shadow-lg sm:min-h-100 md:min-h-112.5 lg:min-h-125">
+              <div className="w-full overflow-hidden rounded-2xl">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.083024070982!2d8.888168873852102!3d9.843394190254172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10537500588cff61%3A0x2189f6392a1acaa1!2sBLOCKFUSE%20LABS!5e0!3m2!1sen!2sng!4v1788477331145!5m2!1sen!2sng"
+                  src="https://www.google.com/maps?q=Blockfuse%20Labs&output=embed"
                   title="Blockfuse Labs Location"
-                  className="h-75 w-full border-0 sm:h-100 md:h-112.5 lg:h-full lg:min-h-125"
-                  allowFullScreen
+                  className="block h-75 w-full border-0 sm:h-100 lg:h-125"
                   loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
                 />
               </div>
             </div>
@@ -201,7 +200,7 @@ export default function ContactUs() {
         </section>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
