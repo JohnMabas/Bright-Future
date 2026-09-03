@@ -1,6 +1,7 @@
 
 import './App.css'
 import Facilities from './components/Facilities'
+import Footer from './components/Footer'
 import Hero from './components/Hero'
 import NavBar from './components/NavBar'
 import Stats from './components/Stats'
@@ -15,6 +16,7 @@ function App() {
       <Stats/>
       <WhyChoose/>
       <Facilities/>
+      <Footer/>
     </>
   )
 }
