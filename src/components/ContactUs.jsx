@@ -1,5 +1,5 @@
-import React from "react";
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 export default function ContactUs() {
   return (
@@ -9,7 +9,6 @@ export default function ContactUs() {
 
         <section className="w-full bg-[#f8fbff] px-4 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="mx-auto max-w-7xl">
-            {/* Header */}
             <div className="mb-8 text-center sm:mb-10 lg:text-left">
               <p className="text-sm font-bold text-[#f4bd35]">Get In Touch</p>
 
@@ -23,9 +22,7 @@ export default function ContactUs() {
               </p>
             </div>
 
-            {/* Main Content */}
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2 lg:items-stretch">
-              {/* Contact Information */}
               <div className="flex flex-col rounded-2xl bg-[#063b70] p-6 shadow-lg sm:p-8 md:p-10">
                 <h3 className="text-xl font-extrabold text-white sm:text-2xl">
                   We'd Love to Hear From You
@@ -36,7 +33,6 @@ export default function ContactUs() {
                   or school activities, our team is ready to help.
                 </p>
 
-                {/* Address */}
                 <div className="mt-7 flex items-start gap-4 sm:mt-8">
                   <div className="">
                     <svg
@@ -63,14 +59,13 @@ export default function ContactUs() {
                     </h4>
 
                     <p className="mt-1 text-xs leading-5 text-blue-100 sm:text-sm">
-                      123 Education Avenue,
+                      brightfuture,
                       <br />
-                      Lagos, Nigeria
+                      Jos, Nigeria
                     </p>
                   </div>
                 </div>
 
-                {/* Phone */}
                 <div className="mt-5 flex items-start gap-4 sm:mt-6">
                   <div className="">
                     <svg
@@ -106,7 +101,6 @@ export default function ContactUs() {
                   </div>
                 </div>
 
-                {/* Email */}
                 <div className="mt-5 flex items-start gap-4 sm:mt-6">
                   <div className="">
                     <svg
@@ -133,7 +127,7 @@ export default function ContactUs() {
                       href="mailto:info@school.edu"
                       className="mt-1 block break-all text-xs text-blue-100 hover:text-white sm:text-sm"
                     >
-                      info@brightfuture.edu.ng
+                      brightfuture@edu.ng
                     </a>
                   </div>
                 </div>
@@ -170,7 +164,7 @@ export default function ContactUs() {
 
                 <div className="mt-7 sm:mt-8">
                   <a
-                    href="mailto:info@school.edu"
+                    href="#"
                     className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#ffc32d] px-6 py-3 text-sm font-extrabold text-[#174785] transition duration-300 hover:bg-[#ffd45d] sm:w-auto"
                   >
                     Send Us a Message
@@ -192,23 +186,22 @@ export default function ContactUs() {
                 </div>
               </div>
 
-              {/* Map */}
-              <div className="overflow-hidden rounded-2xl border border-[#dce8f3] bg-white shadow-lg">
-                <div className="h-[300px] w-full sm:h-[400px] md:h-[450px] lg:h-full lg:min-h-[500px]">
-                  <iframe
-                    title="School Location"
-                    src="https://www.google.com/maps?q=Lagos,Nigeria&output=embed"
-                    className="h-full w-full border-0"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    allowFullScreen
-                  />
-                </div>
+              <div className="min-h-75 overflow-hidden rounded-2xl border border-[#dce8f3] bg-white shadow-lg sm:min-h-100 md:min-h-112.5 lg:min-h-125">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.083024070982!2d8.888168873852102!3d9.843394190254172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10537500588cff61%3A0x2189f6392a1acaa1!2sBLOCKFUSE%20LABS!5e0!3m2!1sen!2sng!4v1788477331145!5m2!1sen!2sng"
+                  title="Blockfuse Labs Location"
+                  className="h-75 w-full border-0 sm:h-100 md:h-112.5 lg:h-full lg:min-h-125"
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                />
               </div>
             </div>
           </div>
         </section>
       </div>
+
+      <Footer/>
     </div>
   );
 }
