@@ -1,6 +1,7 @@
 import { FaBullseye, FaStar } from "react-icons/fa";
 import SchoolImage from "/public/image/Schoolbuilding.png";
 
+
 export default function AboutHero() {
   return (
     <div>
