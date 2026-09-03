@@ -1,4 +1,3 @@
-
 import {
   createBrowserRouter,
   RouterProvider,
@@ -27,6 +26,8 @@ function Home(){
   )
 }
 
+
+
 function App() {
 const router = createBrowserRouter([
   {
@@ -36,11 +37,9 @@ const router = createBrowserRouter([
 
    {
     path: "/about",
-    element: <About/>
+    element:<About/>
   },
 ]);
-
-
 
  return (
     <RouterProvider router={router} />
