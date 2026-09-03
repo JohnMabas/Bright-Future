@@ -13,6 +13,7 @@ import Stats from './components/Stats'
 import WhyChoose from './components/WhyChoose'
 import Academic from "./components/Academic";
 import NewEvents from "./components/NewEvents";
+import CTA from "./components/CTA";
 
 
 function Home(){
@@ -23,6 +24,7 @@ function Home(){
       <Stats/>
       <WhyChoose/>
       <Facilities/>
+      <CTA/>
       <Footer/>
     </>
   )

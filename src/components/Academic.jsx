@@ -1,3 +1,4 @@
+import CTA from "./CTA";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
 import PrimaryStudent from "/public/image/Primaryschool.png";
@@ -51,7 +52,7 @@ export default function Academic() {
 
                 <a
                   href="#"
-                  className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-[#0879e8]"
+                  className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-[#ffc32d]"
                 >
                   Learn More
                   <span>
@@ -96,7 +97,7 @@ export default function Academic() {
 
                 <a
                   href="#"
-                  className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-[#0879e8]"
+                  className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-[#ffc32d]"
                 >
                   Learn More
                   <span>
@@ -141,7 +142,7 @@ export default function Academic() {
 
                 <a
                   href="#"
-                  className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-[#0879e8]"
+                  className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-bold text-[#ffc32d]"
                 >
                   Learn More
                   <span>
@@ -164,6 +165,8 @@ export default function Academic() {
           </div>
         </div>
       </section>
+
+      <CTA/>
 
       <Footer/>
     </div>

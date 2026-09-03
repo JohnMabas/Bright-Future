@@ -48,7 +48,7 @@ export default function NewEvents() {
 
                 <a
                   href="#"
-                  className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#0879e8] transition hover:text-[#045bb3]"
+                  className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#ffc32d] transition hover:text-[#045bb3]"
                 >
                   Read More
                   <span className="text-sm">
@@ -93,7 +93,7 @@ export default function NewEvents() {
 
                 <a
                   href="#"
-                  className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#0879e8] transition hover:text-[#045bb3]"
+                  className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#ffc32d] transition hover:text-[#045bb3]"
                 >
                   Read More
                   <span className="text-sm">
@@ -138,7 +138,7 @@ export default function NewEvents() {
 
                 <a
                   href="#"
-                  className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#0879e8] transition hover:text-[#045bb3]"
+                  className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-[#ffc32d] transition hover:text-[#045bb3]"
                 >
                   Read More
                   <span className="text-sm">

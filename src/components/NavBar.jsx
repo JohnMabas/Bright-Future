@@ -17,17 +17,17 @@ export default function NavBar() {
           </div>
         </div>
 
-        <ul className="hidden md:flex justify-center items-center gap-10 text-[#0F3158]">
-          <Link to="/">
+        <ul className="hidden md:flex justify-center items-center gap-10  text-[#0F3158]">
+          <Link to="/" className="hover:underline">
             <li>Home</li>
           </Link>
-          <Link to="/about">
+          <Link to="/about" className="hover:underline">
             <li>About</li>
           </Link>
-          <Link to="/academic">
+          <Link to="/academic" className="hover:underline">
             <li>Admissions</li>
           </Link>
-          <Link to="/newEvents">
+          <Link to="/newEvents" className="hover:underline">
             <li>News & Events</li>
           </Link>
           <li>Contact</li>
@@ -35,7 +35,7 @@ export default function NavBar() {
 
         <div className="hidden md:flex items-center gap-4">
           <FaSearch className="text-[#0F3158]" />
-          <button className="rounded-full bg-[#1769E8] text-white w-28 p-2 m-1">
+          <button className="rounded-full bg-[#ffc32d] transition hover:bg-[#045bb3] hover:text-white text-[#0F3158] w-28 p-2 m-1">
             Apply Now
           </button>
         </div>
@@ -50,16 +50,16 @@ export default function NavBar() {
 
       {isOpen && (
         <ul className="md:hidden flex flex-col items-center gap-6 text-[#0F3158] py-6">
-          <Link to="/" onClick={() => setIsOpen(false)}>
+          <Link to="/" className="hover:underline" onClick={() => setIsOpen(false)}>
             <li>Home</li>
           </Link>
-          <Link to="/about" onClick={() => setIsOpen(false)}>
+          <Link to="/about" className="hover:underline" onClick={() => setIsOpen(false)}>
             <li>About</li>
           </Link>
-          <Link to="/academic" onClick={() => setIsOpen(false)}>
+          <Link to="/academic" className="hover:underline" onClick={() => setIsOpen(false)}>
             <li>Admissions</li>
           </Link>
-          <Link to="/newEvents" onClick={() => setIsOpen(false)}>
+          <Link to="/newEvents" className="hover:underline" onClick={() => setIsOpen(false)}>
             <li>News & Events</li>
           </Link>
 
