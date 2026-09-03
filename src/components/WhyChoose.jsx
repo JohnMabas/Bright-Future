@@ -7,7 +7,7 @@ export default function WhyChoose() {
   return (
     <div>
       <div className="p-10">
-        <h2 className="text-[#0F3158] text-3xl font-bold">Why Choose BrightFuture</h2>
+        <h2 className="text-[#0F3158] text-3xl font-[Poppins]">Why Choose BrightFuture</h2>
         <p className="text-[#0F3158] text-sm">Hightlighting what makes the school unique</p>
         <div className="flex gap-5">
             <div className="flex items-center gap-2">
