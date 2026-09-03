@@ -83,7 +83,7 @@ export default function Footer() {
                     />
                   </svg>
 
-                  <span>123 Education Street, Cityville</span>
+                  <span>brightfuture, Jos Nigeria</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <svg
@@ -104,7 +104,7 @@ export default function Footer() {
                     />
                   </svg>
 
-                  <span>+234 809 234 5678</span>
+                  <span>+234 9060096590</span>
                 </li>
                 <li className="flex items-center gap-2">
                   <svg
@@ -121,7 +121,7 @@ export default function Footer() {
                     />
                   </svg>
 
-                  <span>info@brightfuture.edu.ng</span>
+                  <span>brightfuture@edu.ng</span>
                 </li>
               </ul>
 
