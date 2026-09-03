@@ -1,6 +1,7 @@
 
 import { FaSearch } from "react-icons/fa"
 import Logo from "/public/image/Bright-log0.png"
+import { Routes, Route, Link } from "react-router";
 
 export default function NavBar() {
   return (
@@ -15,8 +16,8 @@ export default function NavBar() {
             </div>
 
             <ul className="flex justify-center items-center gap-10 text-[#0F3158]">
-                <li>Home</li>
-                <li>About</li>
+                <Link to="/"><li>Home</li></Link>
+               <Link to="/about"><li >About</li></Link>   
                 <li>Admissions</li>
                 <li>School Life</li>
                 <li>News & Events</li>

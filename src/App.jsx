@@ -1,5 +1,11 @@
 
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router";
+
 import './App.css'
+import About from './components/About'
 import Facilities from './components/Facilities'
 import Footer from './components/Footer'
 import Hero from './components/Hero'
@@ -7,11 +13,11 @@ import NavBar from './components/NavBar'
 import Stats from './components/Stats'
 import WhyChoose from './components/WhyChoose'
 
-function App() {
 
-  return (
-    < >
-      <NavBar/>
+function Home(){
+  return(
+    <>
+     <NavBar/>
       <Hero/>
       <Stats/>
       <WhyChoose/>
@@ -19,6 +25,26 @@ function App() {
       <Footer/>
     </>
   )
+}
+
+function App() {
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home/>,
+  },
+
+   {
+    path: "/about",
+    element: <About/>
+  },
+]);
+
+
+
+ return (
+    <RouterProvider router={router} />
+  );
 }
 
 export default App
